@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is the about page for bountiful smoothies. Learn about the company and how it came to be."
+    />
+    <title>Bountiful Smoothie About Page</title>
+    <meta name="author" content="Spencer Engmann" />
+    <meta
+      property="og:url"
+      content="https://spencerengmann.github.io/wdd230/bountiful/index.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bountiful Smoothies" />
+    <meta
+      property="og:description"
+      content="This is the about page for bountiful smoothies. Learn about the company and how it came to be."
+    />
+    <meta
+      property="og:image"
+      content="https://spencerengmann.github.io/wdd230/bountiful/images/logo.png"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <script src="scripts/hamburger-menu.js" defer></script>
+
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" width="107" height="100" alt="brand logo" />
+
+      <h1>Bountiful Smoothies</h1>
+      <nav>
+        <button class="menu-hide">X</button
+        ><button class="menu-show showing">&equiv;</button>
+        <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="order.html">Order Drink</a></li>
+          <li><a class="active" href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="about-main">
+      <section id="company-info">
+        <h2>About Bountiful Foods</h2>
+        <picture>
+          <source srcset="images/store3-small.webp" media="(max-width:560px)" />
+          <source
+            srcset="images/store3medium.webp"
+            media="(max-width:1200px)"
+          />
+          <img src="images/store3large.webp" alt="Company image" />
+        </picture>
+        <p>
+          Bountiful Smoothies, a refreshing venture that emerged in 2010,
+          embarked on its journey with a vision to revolutionize the health
+          beverage industry. Founded by nutrition enthusiasts Emma Turner and
+          Mark Harris, the company originated in the vibrant culinary landscape
+          of California. Fueled by a passion for promoting wellness through
+          delicious and nutritious blends, Turner and Harris aimed to create a
+          haven for health-conscious consumers seeking a flavorful alternative
+          to traditional snacks. The duo's commitment to quality ingredients and
+          innovative recipes quickly set Bountiful Smoothies apart. Their first
+          storefront, a quaint corner shop in San Francisco, became a local
+          sensation, attracting health enthusiasts and curious taste buds alike.
+          As the demand for their delectable creations soared, Bountiful
+          Smoothies expanded its footprint, opening outlets across major cities
+          nationwide. Over the years, the company has continued to evolve,
+          introducing seasonal menus and collaborating with local farmers to
+          source the freshest produce. Bountiful Smoothies' commitment to
+          sustainability is evident in its eco-friendly packaging and
+          partnerships with environmental organizations. Today, Bountiful
+          Smoothies stands as a beacon of health, offering a diverse menu of
+          nutrient-packed smoothies that celebrate wellness without compromising
+          on taste. As they continue to blend health and flavor, the company
+          remains dedicated to inspiring a community of individuals committed to
+          nourishing their bodies with every sip.
+        </p>
+      </section>
+      <section id="area-info">
+        <h2>Santa Monica</h2>
+        <picture>
+          <source srcset="images/carli2-small.webp" media="(max-width:560px)" />
+          <source
+            srcset="images/carli2-medium.webp"
+            media="(max-width:1200px)"
+          />
+          <img src="images/carli2-large.webp" alt="Company image" />
+        </picture>
+        <p>
+          Santa Monica, where sun, surf, and sophistication collide in a coastal
+          haven. Picture a lively boardwalk, the iconic Pier's Ferris wheel
+          against a Pacific backdrop, and the bustling Third Street Promenade's
+          eclectic charm. This beachside gem effortlessly blends healthy living
+          with carefree fun, where yoga enthusiasts, rollerbladers, and tech
+          gurus coexist. Dive into the vibrant street performances, shop, dine,
+          and embrace the sun-soaked energy that defines Santa Monica. It's a
+          place where every sunset paints the sky with a coastal masterpiece,
+          and the crashing waves provide the soundtrack to your laid-back
+          adventures. Welcome to the epitome of beachside bliss and California
+          cool.
+        </p>
+      </section>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53464.43454892112!2d-117.32908736340288!3d33.12151274300701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73453f3bee59%3A0xa4cb5592fcf65d2f!2sCarlsbad%2C%20CA!5e0!3m2!1sen!2sus!4v1702426763070!5m2!1sen!2sus"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </main>
+    <footer>
+      <div class="footer-logo">
+        <p>
+          <img src="images/logo.png" alt="Logo" width="107" height="100" />
+        </p>
+      </div>
+      <div class="footer-contact-details">
+        <p><b>Bountiful Smoothies</b></p>
+        <p>2428 24th St</p>
+        <p>Santa Monica,CA 90404</p>
+        <p>+2084031179|bountifulfoods@gmail.com</p>
+      </div>
+
+      <div class="footer-base">
+        <p>
+          &copy;<span id="currentyear"></span> Bountiful Smoothies | Last
+          Modified: <span id="lastmodified"></span>
+        </p>
+        <div class="resources">
+          <p>Resources:</p>
+          <a href="https://www.fruityvice.com/#1">Fruity Vice</a> |
+          <a href="https://openweathermap.org/">Open Weather</a>
+        </div>
+      </div>
+      <div class="socialmedia">
+        <a href="https://www.facebook.com/">
+          <img
+            src="images/facebook.png"
+            alt="Facebook"
+            width="50"
+            height="50"
+          />
+        </a>
+
+        <a href="https://twitter.com/">
+          <img src="images/twitter.png" alt="Twitter" width="50" height="50" />
+        </a>
+
+        <a href="https://www.instagram.com/">
+          <img
+            src="images/instagram.webp"
+            alt="Instagram"
+            width="50"
+            height="50"
+          />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

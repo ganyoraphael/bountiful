@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the order page for bountiful smoothies. Select from our variety of options to make own best smoothie ">
+    <title>Bountiful Smoothie Order Page</title>
+    <meta name="author" content="Raphael Ganyo">
+    <meta property="og:url" content="https://ganyoraphael.github.io/wdd230/bountiful/order.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bountiful Smoothies">
+    <meta property="og:description" content="This is the order page for bountiful smoothies. Select from our variety of options to make own best smoothie ">
+    <meta property="og:image" content="https://ganyoraphael.github.io/wdd230/bountiful/images/logo.png">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat&family=Montserrat:400,600&display=swap">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/getfruits.js" defer></script>
+    <script src="scripts/update.js" defer></script>
+    <script src="scripts/order.js" defer></script>
+    <script src="scripts/count.js" defer></script>
+</head>
+
+<body>
+  <header>
+      <img src="images/logo.webp" width="107" height="100" alt="brand logo">
+      <h1>Bountiful Smoothies</h1>
+      <nav>
+          <button class="menu-hide">X</button>
+          <button class="menu-show showing">&equiv;</button>
+          <ul id="nav-menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a class="active" href="order.html">Order Drink</a></li>
+              <li><a href="about.html">About Us</a></li>
+          </ul>
+      </nav>
+      <div class="dark-mode-toggle-container">
+          <label class="switch">
+              <input type="checkbox" id="dark-mode-toggle">
+              <span class="slider round"></span>
+          </label>
+      </div>
+  </header>
+
+    <!-- Optional Phone Number Input Section -->
+    <div style="border: 1px solid #ccc; padding: 20px; text-align: center; margin: 20px 0;">
+        <h2>Stay in Touch!</h2>
+        <p>Would you like to leave your phone number with us to receive updates?</p>
+        <input type="checkbox" id="phone-opt-in" name="phone-opt-in" onchange="togglePhoneNumberField()">
+        <label for="phone-opt-in">Yes, I would love to!</label>
+        <div id="phone-number-field" style="display: none; margin-top: 10px;">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
+        </div>
+    </div>
+
+
+<main id="order-main">
+        <!-- Smoothie Order Form Section -->
+        <section id="order-section" class="order-section">
+            <h2>Order Form</h2>
+            <form method="get" action="orderconfirmation.html" id="order-form" class="order-form">
+                <!-- Form fields -->
+                <label class="form">
+                    First Name:
+                    <input id="firstname" name="firstname" type="text" required>
+                </label>
+                <label class="form">
+                    Email:
+                    <input id="email" name="email" placeholder="raphjohn@example.com" type="email" required>
+                </label>
+                <label class="form">
+                    Phone Number:
+                    <input id="phone-alt" name="phone-alt" type="tel" placeholder="123-456-7890" required>
+                </label>
+                <label class="form">
+                    1st Fruit:
+                    <select id="choice1" name="choice1" class="option">
+                        <option value="" disabled selected>Fruit Options</option>
+                        <!-- Add fruit options here -->
+                    </select>
+                </label>
+                <label class="form">
+                    2nd Fruit:
+                    <select id="choice2" name="choice2" class="option">
+                        <option value="" disabled selected>Fruit Options</option>
+                        <!-- Add fruit options here -->
+                    </select>
+                </label>
+                <label class="form">
+                    3rd Fruit:
+                    <select id="choice3" name="choice3" class="option">
+                        <option value="" disabled selected>Fruit Options</option>
+                        <!-- Add fruit options here -->
+                    </select>
+                </label>
+                <label class="form" id="spec-instructions">
+                    Special Instructions (Optional):
+                    <textarea id="instructions" name="instructions"></textarea>
+                </label>
+                <button type="submit" class="submit-button">Order Drink!</button>
+
+                <p class="payment-instruction">Payment is received when drink is picked up</p>
+            </form>
+        </section>
+    
+      <!-- Smoothie Examples Section -->
+      <section id="examples" class="smoothie-examples">
+        
+        <!-- Example 1 -->
+        <article class="example">
+          <h3>Banana Radiance Smoothie</h3>
+          <img src="images/bananapic.webp" alt="Sunshine Banana Smoothie">
+          <p>
+            Immerse yourself in a symphony of flavors with our Banana Radiance Smoothie. This bright concoction marries the smooth taste of bananas with a tangy burst of strawberries, creating a rich and nutritious delight. Rich in vitamin C and packed with antioxidants, it's a perfect way to invigorate your palate and boost your well-being.
+
+          </p>
+        </article>
+        <!-- Example 2 -->
+        <article class="example">
+          <h3>Berries Euphoria Smoothie</h3>
+          <img src="images/Berriespic.webp" alt="Berry Heavenly Bliss Smoothie">
+          <p>
+            Indulge in the lush flavors of our Berries Euphoria Smoothie. This blend captures the essence of strawberries, blueberries, and raspberries mixed to perfection. The richness of Greek yogurt and a subtle note of almond milk come together for a lusciously creamy beverage that’s sure to uplift your spirits any time of day.
+
+          </p>
+        </article>
+        <!-- Example 3 -->
+        <article class="example">
+          <h3>Blueberry Zest Smoothie</h3>
+          <img src="images/mixed-berries-with-yogurt-smoothies.webp" alt="Blueberry Blast Smoothie">
+          <p>
+              Reinvigorate your senses with our Blueberry Zest Smoothie. This drink adds a refreshing punch with juicy pineapple pieces, complementing the natural sweetness of blueberries. The perfect harmony of flavors is designed to tantalize your taste buds while delivering a nutritional boost, thanks to the power-packed vitamins and enzymes in every sip.
+
+          </p>
+        </article>
+      </section>
+    </main>
+    
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <img src="images/logo.webp" alt="Logo" class="footer-logo">
+          <div class="contact-info">
+            <p><b>Bountiful Smoothies</b></p>
+            <p>1234 Carlsbad City Rd</p>
+            <p>Santa Monica,CA 92044</p>
+            <p>+2081234567 | contact@bountifulsmoothies.com</p>
+          </div>
+        </div>
+        <div class="footer-section">
+          <div class="resources">
+            <p><strong>Resources: </strong></p>
+            <p>
+              <a href="https://www.fruityvice.com/">Fruity Vice</a> |
+              <a href="https://openweathermap.org/">Open Weather</a>
+            </p>
+          </div>
+          <p class="copy-modified">©<span id="currentyear"></span> Bountiful Smoothies | Last Modified: <span id="lastmodified"></span></p>
+        </div>
+        <div class="footer-section social-media">
+          <a href="https://www.facebook.com/">
+            <img src="images/facebook.png" alt="Facebook" width="30" height="30">
+          </a>
+          <a href="https://twitter.com/">
+            <img src="images/twitter.png" alt="Twitter" width="30" height="30">
+          </a>
+          <a href="https://www.instagram.com/">
+            <img src="images/instagram.webp" alt="Instagram" width="30" height="30">
+          </a>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>

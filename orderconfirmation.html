@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="This is the order confirmation page. The place where customers finds out what they ordered and when the order will be ready for picked up">
+    <title>Bountiful Smoothie Order Confirmation Page</title>
+    <meta name="author" content="Raphael Ganyo">
+    <meta
+      property="og:url"
+      content="https://ganyoraphael.github.io/wdd230/bountiful/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bountiful Smoothies">
+    <meta
+      property="og:description"
+      content="This is the order confirmation page. The place where customers finds out what they ordered and when the order will be ready for picked up">
+    <meta
+      property="og:image"
+      content="https://ganyoraphael.github.io/wdd230/bountiful/images/logo.png">
+    <link rel="icon" href="images/favicon.ico">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat&family=Montserrat:400,600&display=swap">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/hamburger-menu.js" defer></script>
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/order.js" defer></script>
+    <script src="scripts/update.js" defer></script>
+    <script src="scripts/count.js" defer></script>
+
+
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.webp" width="107" height="100" alt="brand logo">
+
+      <h1>Bountiful Smoothies</h1>
+      <nav>
+        <button class="menu-hide">X</button
+        ><button class="menu-show showing">&equiv;</button>
+        <ul id="nav-menu">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="order.html">Order Drink</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+      <div class="dark-mode-toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="dark-mode-toggle">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </header>
+    <main id="orderconf-main">
+      <div id="confirmation">
+        <h2>Thank You for Your Order!</h2>
+
+        <div id="output-area"></div>
+        <p>Your drink will be ready for pickup at:</p>
+        <div id="pickup-time"></div>
+
+        <div id="contact">
+          <p>
+            Do you have any questions or issues? Please contact us at:
+            <a href="tel:+12081234567">+1 (208) 1234-567</a>
+          </p>
+        </div>
+        <div id="review">
+          <p>Please leave a review on social media!</p>
+          <a href="#" id="leave-review">Leave a Review</a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <img src="images/logo.webp" alt="Logo" class="footer-logo">
+          <div class="contact-info">
+            <p><b>Bountiful Smoothies</b></p>
+            <p>1234 Carlsbad City Rd</p>
+            <p>Santa Monica,CA 92044</p>
+            <p>+2081234567 | contact@bountifulsmoothies.com</p>
+          </div>
+        </div>
+        <div class="footer-section">
+          <div class="resources">
+            <p><strong>Resources: </strong></p>
+            <p>
+              <a href="https://www.fruityvice.com/">Fruity Vice</a> |
+              <a href="https://openweathermap.org/">Open Weather</a>
+            </p>
+          </div>
+          <p class="copy-modified">©<span id="currentyear"></span> Bountiful Smoothies | Last Modified: <span id="lastmodified"></span></p>
+        </div>
+        <div class="footer-section social-media">
+          <a href="https://www.facebook.com/">
+            <img src="images/facebook.png" alt="Facebook" width="30" height="30">
+          </a>
+          <a href="https://twitter.com/">
+            <img src="images/twitter.png" alt="Twitter" width="30" height="30">
+          </a>
+          <a href="https://www.instagram.com/">
+            <img src="images/instagram.webp" alt="Instagram" width="30" height="30">
+          </a>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>

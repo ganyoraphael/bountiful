@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The home page for bountiful smoothies. Discover the variety of smoothies available for your enjoyment">
+    <title>Bountiful Smoothie Home Page</title>
+    <meta name="author" content="Raphael Ganyo">
+    <meta property="og:url" content="https://ganyoraphael.github.io/wdd230/bountiful/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bountiful Smoothies">
+    <meta property="og:description" content="The home page for bountiful smoothies. Discover the variety of smoothies available for your enjoyment">
+    <meta property="og:image" content="https://ganyoraphael.github.io/wdd230/bountiful/images/logo.png">
+   
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/count.js" defer></script>
+    <script src="scripts/button.js" defer></script>
+    <script src="scripts/order.js" defer></script>
+    <script src="scripts/update.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <img src="images/logo.webp" alt="brand logo" width="107" height="100">
+      <h1>Bountiful Smoothies</h1>
+      <nav>
+        <button class="menu-hide">X</button>
+        <button class="menu-show showing">&equiv;</button>
+        <ul id="nav-menu">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="order.html">Order Drink</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+      <div class="dark-mode-toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="dark-mode-toggle">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </header>
+
+    <!-- <main id="index-main">
+    <section id="hero">
+        <h2 class="visually-hidden">Hero Banner</h2>
+        <div class="hero-container">
+            <div class="hero-text">
+                <span>Discover Your Flavor!</span>
+                <button id="order-button">Mix Your Smoothie</button>
+            </div>
+            <picture>
+                <source srcset="images/her-small.webp" media="(max-width:560px)">
+                <source srcset="images/her-medium.webp" media="(max-width:1200px)">
+                <img src="images/her-large.webp" alt="Hero image">
+            </picture>
+        </div>
+    </section>
+  
+    <section id="information">
+      <h2>Number of Specialty Smoothies Ordered</h2>
+      <span id="order-count">0</span>
+    </section>
+    <section id="summary" class="index-section">
+        <h2 class="visually-hidden">Explore Santa Monica</h2>
+          <p>
+            Discover the charm of Santa Monica, a coastal jewel that boasts an effervescent mix of laid-back beach vibes and sophisticated urban flair. With its world-famous pier offering endless ocean views, and the Third Street Promenade beckoning with chic boutiques and lively entertainment, Santa Monica captures the quintessential California dream. It's a dynamic haven where the arts thrive, surfers find their paradise, and a diverse community flourishes amidst the scenic beauty. Experience the allure of its oceanfront wonders and immerse yourself in the captivating energy that defines this beloved beach city.
+
+          </p>
+        </div>
+        <img src="images/santa-city.webp" alt="image of Santa Monica" id="summary-img">
+        <div class="text-container right">
+          <h2>Santa Monica</h2>
+          <p>
+            Nestled on the sun-drenched Pacific coastline, Santa Monica is a picturesque paradise brimming with the relaxed allure of beach life and the buzz of city excitement. Home to the iconic pier and the bustling promenade, it's a place where palm trees sway in the breeze and waves gently kiss the shore. The locale is steeped in the rich surf culture of Southern California, offering an eclectic mix of outdoor fun, cultural hotspots, and an inviting sense of community. From the serene stretches of golden sand to the verdant paths of Palisades Park, Santa Monica merges the tranquility of coastal retreat with the vibrancy of urban living.
+
+          </p>
+        </div>
+      </section> -->
+      <main id="index-main">
+        <section id="hero">
+          <h2 class="visually-hidden">Hero Banner</h2>
+          <div class="hero-container">
+            <div class="hero-text">
+              <span>Discover Your Flavor!</span>
+              <button id="order-button">Mix Your Smoothie</button>
+            </div>
+            <picture>
+              <source srcset="images/her-small.webp" media="(max-width:560px)">
+              <source srcset="images/her-medium.webp" media="(max-width:1200px)">
+              <img src="images/her-large.webp" alt="Hero image">
+            </picture>
+          </div>
+        </section>
+    
+        <section id="information">
+          <h2>Number of Specialty Smoothies Ordered</h2>
+          <span id="order-count">0</span>
+        </section>
+  
+        <section id="summary" class="index-section">
+          <h2 class="visually-hidden">Explore Santa Monica</h2>
+          <p>
+            Discover the charm of Santa Monica, a coastal jewel that boasts an effervescent mix of laid-back beach vibes and sophisticated urban flair. With its world-famous pier offering endless ocean views, and the Third Street Promenade beckoning with chic boutiques and lively entertainment, Santa Monica captures the quintessential California dream. It's a dynamic haven where the arts thrive, surfers find their paradise, and a diverse community flourishes amidst the scenic beauty. Experience the allure of its oceanfront wonders and immerse yourself in the captivating energy that defines this beloved beach city.
+          </p>
+          <img src="images/santa-city.webp" alt="image of Santa Monica" id="summary-img">
+          <div class="text-container right">
+            <h2>Santa Monica</h2>
+            <p>
+              Nestled on the sun-drenched Pacific coastline, Santa Monica is a picturesque paradise brimming with the relaxed allure of beach life and the buzz of city excitement. Home to the iconic pier and the bustling promenade, it's a place where palm trees sway in the breeze and waves gently kiss the shore. The locale is steeped in the rich surf culture of Southern California, offering an eclectic mix of outdoor fun, cultural hotspots, and an inviting sense of community. From the serene stretches of golden sand to the verdant paths of Palisades Park, Santa Monica merges the tranquility of coastal retreat with the vibrancy of urban living.
+            </p>
+          </div>
+        </section>
+
+        <div id="smoothies">
+          <h2 class="visually-hidden">Our Specialty Smoothies</h2>
+          <!-- News & Stories Section -->
+          <div class="news-stories-container">
+            <h2 class="news-stories-title">Our Specialty Smoothies</h2>
+            <div class="news-stories">
+              <!-- News Story 1 -->
+              <div class="news-story">
+                <img src="images/berries-mix.webp" alt="Berry Delight Smoothie">
+                <div class="news-story-content">
+                  <h3 class="news-story-title">Berry Delight</h3>
+                  <p class="news-story-excerpt">Savor the delightful blend of fresh berries in our Berry Delight Smoothie. It's a perfect mix of taste and health to start your day!</p>
+                  <a href="order.html" class="news-story-link">Order Now →</a>
+                </div>
+              </div>
+              <!-- News Story 2 -->
+              <div class="news-story">
+                <img src="images/green-smoothie-glass.webp" alt="Green Goodness Smoothie">
+                <div class="news-story-content">
+                  <h3 class="news-story-title">Green Goodness</h3>
+                  <p class="news-story-excerpt">Rejuvenate with our Green Goodness Smoothie, a nourishing concoction of greens for that perfect energy boost.</p>
+                  <a href="order.html" class="news-story-link">Order Now →</a>
+                </div>
+              </div>
+              <!-- News Story 3 -->
+              <div class="news-story">
+                <img src="images/tropical-fruits.webp" alt="Tropical Paradise Smoothie">
+                <div class="news-story-content">
+                  <h3 class="news-story-title">Tropical Paradise</h3>
+                  <p class="news-story-excerpt">Escape to a tropical paradise with this smoothie, brimming with exotic fruits and a splash of coconut.</p>
+                  <a href="order.html" class="news-story-link">Order Now →</a>
+                </div>
+              </div>
+              <!-- News Story 4 -->
+              <div class="news-story">
+                <img src="images/banana.webp" alt="Strawberry Banana Bliss">
+                <div class="news-story-content">
+                  <h3 class="news-story-title">Strawberry Banana Bliss</h3>
+                  <p class="news-story-excerpt">Enjoy the classic combination of strawberries and bananas in this smoothie, perfect for a refreshing and filling treat.</p>
+                  <a href="order.html" class="news-story-link">Order Now →</a>
+                </div>
+              </div>
+              <!-- News Story 5 -->
+              <div class="news-story">
+                <img src="images/blueberry.webp" alt="Blueberry Acai Antioxidant">
+                <div class="news-story-content">
+                  <h3 class="news-story-title">Blueberry Acai Antioxidant</h3>
+                  <p class="news-story-excerpt">Packed with antioxidants, this blueberry acai smoothie is both delicious and a superfood powerhouse.</p>
+                  <a href="order.html" class="news-story-link">Order Now →</a>
+                </div>
+              </div>
+              <!-- News Story 6 -->
+              <div class="news-story">
+                <img src="images/pinnaple.webp" alt="Pineapple Spinach Refresher">
+                <div class="news-story-content">
+                  <h3 class="news-story-title">Pineapple Spinach Refresher</h3>
+                  <p class="news-story-excerpt">Get your greens in a delightful way with this tropical-inspired blend of pineapple and spinach.</p>
+                  <a href="order.html" class="news-story-link">Order Now →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <section id="weather" class="index-section">
+          <section id="current-weather">
+            <h2 class="visually-hidden">Current Weather</h2>
+            <p>Today</p>
+            <img src="images/weather-icon.webp" alt="Weather Icon" id="weather-icon">
+            <p id="w-description">Description</p>
+            <p>Temperature: <span id="temp-span"></span></p>
+            <p>Humidity: <span id="humid-span"></span></p>
+          </section>
+        
+
+        <h2>Forecast for the next 3 Days ---></h2>
+        <section id="forecastSection"></section>
+        
+        
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <img src="images/logo.webp" alt="Logo" class="footer-logo">
+          <div class="contact-info">
+            <p><b>Bountiful Smoothies</b></p>
+            <p>1234 Carlsbad City Rd</p>
+            <p>Santa Monica,CA 92044</p>
+            <p>+2081234567 | contact@bountifulsmoothies.com</p>
+          </div>
+        </div>
+        <div class="footer-section">
+          <div class="resources">
+            <p><strong>Resources: </strong></p>
+            <p>
+              <a href="https://www.fruityvice.com/">Fruity Vice</a> |
+              <a href="https://openweathermap.org/">Open Weather</a>
+            </p>
+          </div>
+          <p class="copy-modified">©<span id="currentyear"></span> Bountiful Smoothies | Last Modified: <span id="lastmodified"></span></p>
+        </div>
+        <div class="footer-section social-media">
+          <a href="https://www.facebook.com/">
+            <img src="images/facebook.png" alt="Facebook" width="30" height="30">
+          </a>
+          <a href="https://twitter.com/">
+            <img src="images/twitter.png" alt="Twitter" width="30" height="30">
+          </a>
+          <a href="https://www.instagram.com/">
+            <img src="images/instagram.webp" alt="Instagram" width="30" height="30">
+          </a>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>

@@ -1,0 +1,92 @@
+@media screen and (min-width:900px) {
+    #order-main {
+        display: grid;
+        grid-template-columns: 1fr;
+
+
+    }
+
+   /* Footer */
+    @media screen and (max-width: 768px) {
+        .footer-content {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .footer-section:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    
+        .footer-logo,
+        .footer-contact-details,
+        .footer-base,
+        .social-media {
+            flex-direction: column;
+            align-items: center; 
+        }
+    
+        .resources {
+            border-left: none;
+            padding-left: 0;
+            text-align: center;
+        }
+    
+        .social-media {
+            justify-content: center;
+        }
+    
+        .footer-logo img {
+            margin: 0 auto;
+        }
+    }
+    
+
+    #order-form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 600px;
+        margin-left: 20%;
+
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 8px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 50px;
+    }
+
+    #examples {
+        display: flex;
+    }
+
+
+}
+
+
+@media screen and (min-width: 900px) {
+    .image-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    .image-section .text-content {
+        flex-basis: 45%;
+    }
+
+    .image-section picture {
+        flex-basis: 50%;
+    }
+
+}
+
+
+

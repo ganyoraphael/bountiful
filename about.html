@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="This is the about page for the bountiful smoothies. Learn more about the organization">
+  <title>About Us - Bountiful Smoothies</title>
+  <meta name="author" content="Raphael Ganyo">
+  <meta
+    property="og:url"
+    content="https://ganyoraphael.github.io/wdd230/bountiful/index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bountiful Smoothies">
+  <meta
+    property="og:description"
+    content="This is the about page for the bountiful smoothies. Learn more about the organization">
+    <meta
+    property="og:image"
+    content="https://ganyoraphael.github.io/wdd230/bountiful/images/logo.png">
+  <link rel="icon" href="images/favicon.ico">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat&family=Montserrat:400,600&display=swap">
+
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/hamburger-menu.js" defer></script>
+  <script src="scripts/order.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/update.js" defer></script>
+
+</head>
+<body>
+  <header>
+    <img src="images/logo.webp" width="107" height="100" alt="brand logo">
+
+    <h1>Bountiful Smoothies</h1>
+    <nav>
+      <button class="menu-hide">X</button
+      ><button class="menu-show showing">&equiv;</button>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="order.html">Order Drink</a></li>
+        <li><a class="active" href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="dark-mode-toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="dark-mode-toggle">
+          <span class="slider round"></span>
+        </label>
+      </div>
+  </header>
+  
+  <main id="about-main">
+
+    <section id="about-story" class="about-section">
+        <h2>Our Story</h2>
+
+        <div class="image-overlay-container">
+          <picture>
+            <source srcset="images/loc.webp 1024w, images/loc.webp 768w, images/loc.webp 320w" sizes="(max-width: 768px) 100vw, 50vw">
+            <img src="images/loc.webp" alt="Our humble beginnings" class="responsive-image">
+          </picture>
+          <div class="text-overlay">Our Legacy</div>
+        </div>
+        <div class="text-container">
+          <p>Founded in the sunny city of Carlsbad, California, Bountiful Smoothies began as a small kiosk on the beach in 2005. Our passion for fresh, vibrant, and nutritious ingredients led us to create smoothies that not only taste great but also nourish the body and soul. Over the years, we've become a staple in the community, growing alongside the vibrant surf culture and the blossoming local businesses.</p>
+          <p>Our commitment to quality and community has never wavered. We source our produce from local farmers, ensuring that every smoothie we serve is a testament to the bountiful offerings of Carlsbad and its surrounding areas.</p>
+        </div>
+      </section>
+    
+      <section id="community-connection" class="about-section">
+        <h2>Our Connection to Carlsbad</h2>
+        <div class="image-overlay-container">
+          <picture>
+            <source srcset="images/new.webp 1024w, images/new.webp 768w, images/new.webp 320w" sizes="(max-width: 768px) 100vw, 50vw">
+            <img src="images/new.webp" alt="Our connection to Carlsbad" class="responsive-image">
+          </picture>
+          <div class="text-overlay">Connection to Best Smoothies in Carlsbad</div>
+        </div>
+        <div class="text-container">
+          <p>Carlsbad's spirit of health, wellness, and outdoor living resonates deeply with our company ethos. As proud members of this community, we actively participate in local events, support environmental initiatives, and collaborate with other local businesses to cultivate a culture of sustainability and well-being.</p>
+        </div>
+      </section>
+  
+
+    <section class="image-section">
+        <h2>Our Founding Location</h2>
+        <div class="text-content">
+        <p>
+            Bountiful Smoothies was born on the sun-kissed shores of Carlsbad, where the ocean breeze meets the passion of the community. Our first stand was more than a place to quench your thirst; it was a meeting ground for health enthusiasts and a beacon for those seeking a taste of California's freshest flavors.
+        </p>
+        <p>
+            This iconic spot remains dear to our hearts as we continue to blend each smoothie with the same enthusiasm and commitment to quality that we had on day one.
+        </p>
+        </div>
+        <picture>
+        <source srcset="images/santa-city.webp 1024w, images/santa-city.webp 768w, images/santa-city.webp 320w" sizes="(max-width: 768px) 100vw, 50vw">
+        <img src="images/santa-city.webp" alt="Our humble beginnings" class="responsive-image">
+        </picture>
+    </section>
+  
+    <!-- Team Section -->
+    <section class="image-section">
+        <h2>Our Team</h2>
+        <div class="text-content">
+        <p>
+            Every smoothie we craft is a team effort. Our staff, a vibrant group of individuals dedicated to health and happiness, are the backbone of Bountiful Smoothies. From the friendly faces that greet you at the counter to the skilled hands that prepare your favorite blends, our team's spirit is infused in every aspect of your experience.
+        </p>
+        <p>
+            As diverse as our menu, our team members bring their unique flavors to the mix, creating an environment that's as welcoming as it is exciting.
+        </p>
+        </div>
+        <picture>
+        <source srcset="images/team.webp 1024w, images/team.webp 768w, images/ 320w" sizes="(max-width: 768px) 100vw, 50vw">
+        <img src="images/team.webp" alt="Our humble beginnings" class="responsive-image">
+        </picture>
+    </section>
+    
+    
+    <section id="google-map">
+      <h2>Find Us in Carlsbad</h2>
+      <iframe
+        width="600"
+        height="450"
+        style="border:0"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53464.43454892112!2d-117.32908736340288!3d33.12151274300701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73453f3bee59%3A0xa4cb5592fcf65d2f!2sCarlsbad%2C%20CA!5e0!3m2!1sen!2sus!4v1702426763070!5m2!1sen!2sus">
+      </iframe>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <img src="images/logo.webp" alt="Logo" class="footer-logo">
+        <div class="contact-info">
+          <p><b>Bountiful Smoothies</b></p>
+          <p>1234 Carlsbad City Rd</p>
+          <p>Santa Monica,CA 92044</p>
+          <p>+2081234567 | contact@bountifulsmoothies.com</p>
+        </div>
+      </div>
+      <div class="footer-section">
+        <div class="resources">
+          <p><strong>Resources: </strong></p>
+          <p>
+            <a href="https://www.fruityvice.com/">Fruity Vice</a> |
+            <a href="https://openweathermap.org/">Open Weather</a>
+          </p>
+        </div>
+        <p class="copy-modified">©<span id="currentyear"></span> Bountiful Smoothies | Last Modified: <span id="lastmodified"></span></p>
+      </div>
+      <div class="footer-section social-media">
+        <a href="https://www.facebook.com/">
+          <img src="images/facebook.png" alt="Facebook" width="30" height="30">
+        </a>
+        <a href="https://twitter.com/">
+          <img src="images/twitter.png" alt="Twitter" width="30" height="30">
+        </a>
+        <a href="https://www.instagram.com/">
+          <img src="images/instagram.webp" alt="Instagram" width="30" height="30">
+        </a>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>
