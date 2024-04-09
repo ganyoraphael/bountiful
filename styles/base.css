@@ -532,15 +532,15 @@ p {
 
 }
 
-#information {
+/* #information {
     text-align: center;
     border-radius: 5px;
     border: 1px solid var(--accent-color1);
     padding: 5px;
     font-size: 1.3rem;
     margin: 5px;
-
-}
+    background-image: url("../images/header.webp");
+} */
 
 #examples {
     display: block;
