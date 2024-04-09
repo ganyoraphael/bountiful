@@ -1,13 +1,10 @@
 // WEATHER INFORMATION
-const LAT = "33.1215196";
-const LON = "-117.287802";
+const LAT = "33.1574647";
+const LON = "-117.342257";
 const APIKEY = "dd1c15f9845223a7a99783c584c93af6";
 const weatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${LAT}&lon=${LON}&appid=${APIKEY}&units=imperial`;
-// CARLSBAD: https://api.openweathermap.org/data/2.5/weather?lat=33.1215196&lon=-117.287802&appid=f4e7eabc96c8e72dd2d715d4dea5f961&units=imperial
 
 function displayWeather(weatherData) {
-  // You can use @2x or @4x to make the icon bigger, or omit it for the standard size
-  // const iconsrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`
   const iconsrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`;
   const weatherTemp = weatherData.main.temp.toFixed(0);
   const desc = weatherData.weather[0].description;

@@ -173,7 +173,7 @@ nav ul li a:hover {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.visually-hidden {
+/* .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -182,7 +182,21 @@ nav ul li a:hover {
     padding: 0;
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
+  } */
+  .explore-santa-monica-container {
+    border: 1px solid #ccc; /* Adjust color and width as needed */
+    padding: 10px; /* Add padding to ensure the text isn't touching the border */
+    border-radius: 10px; /* Optional: for rounded corners like the one in the image */
+    box-sizing: border-box; /* This ensures that padding and border are included in the element's total width and height */
+    margin: 10px 0; /* Adds some space around the container */
   }
+  
+  /* If your h2 has bottom margin that you'd like to adjust */
+  .explore-santa-monica-container h2 {
+    margin-bottom: 0.5em; /* Adjust as needed */
+  }
+  
+    
   
 
 #order-button {

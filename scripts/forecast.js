@@ -1,27 +1,15 @@
-// FORECAST
-// const forecastDays = 3;
 
-// for (i in forecastDays) {
-//   let section = document.createElement("section");
-//   section.classList.add("forecast");
-//   let sectionHTML = `<img src="${forecastIcon}" alt="Weather Icon"/>
-//   <p>${forecastDescription}</p>"`;
-// }
-
-// Update this URL to your API call URL to openweather
-
-const forecastLAT = "33.1215196";
-const forecastLON = "-117.287802";
+const forecastLAT = "33.1574647";
+const forecastLON = "-117.342257";
 const forecastAPIKEY = "ae96f33e451e474493e94ec9562118b9";
 const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${forecastLAT}&lon=${forecastLON}&appid=${forecastAPIKEY}&units=imperial`;
-// CARLSBAD: https://api.openweathermap.org/data/2.5/forecast?lat=33.1215196&lon=-117.287802&appid=f4e7eabc96c8e72dd2d715d4dea5f961&units=imperial
 
 const ONE_DAY = 24 * 60 * 60 * 1000;
 
 function forecast(forecastData) {
   let dates = [];
   let mydate = new Date();
-  const ONE_DAY = 24 * 60 * 60 * 1000; // milliseconds in a day
+  const ONE_DAY = 24 * 60 * 60 * 1000;
 
   // Get the next three days' dates
   for (let i = 0; i < 3; i++) {

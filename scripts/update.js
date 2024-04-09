@@ -1,34 +1,4 @@
-// document.getElementById('submit-button').addEventListener('click', function() {
-//     var currentOrderCount = localStorage.getItem('orderCount') || 0;
 
-//     currentOrderCount++;
-
-//     localStorage.setItem('orderCount', currentOrderCount);
-// });
-
-
-
-
-// function togglePhoneNumberField() {
-//     var checkBox = document.getElementById("phone-opt-in");
-//     var phoneNumberField = document.getElementById("phone-number-field");
-//     if (checkBox.checked === true){
-//       phoneNumberField.style.display = "block";
-//     } else {
-//       phoneNumberField.style.display = "none";
-//     }
-//   }
-
-
-// window.onscroll = function() {
-//     var header = document.querySelector('header');
-//     if(window.pageYOffset > 0){
-//       header.classList.add('sticky-header');
-//     } else {
-//       header.classList.remove('sticky-header');
-//     }
-//   };
-  
 
 // Function to handle the order form submission
 function handleOrderSubmission() {
