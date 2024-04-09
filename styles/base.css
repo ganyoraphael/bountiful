@@ -964,3 +964,188 @@ header {
     color: var(--text-color);
   }
   
+
+  /* Gallery */
+  .gallery-cta-section {
+    text-align: center;
+    padding: 20px;
+    margin: 30px 0;
+    background: var(--accent-color2);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-cta-section h2 {
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.gallery-cta-section p {
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.btn.gallery-btn {
+    background-color: var(--button-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn.gallery-btn:hover {
+    background-color: var(--button-hover-color);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* *Discover Page*/ */
+  .discover_title {
+      text-align: center;
+  }
+  .galery_container {
+      display: flex;
+      flex-direction: column;
+  }
+  .galery_container img[data-src]{
+    filter: blur(0.3em);
+    justify-content: center;
+    width: 100%;
+  }
+  .galery_container img{            
+    filter: blur(0.0em);
+    transition: filter .5s;  
+    justify-content: center;
+    width: 100%;
+  }
+  #hamburgerBtn{
+    display: none;
+  }
+  .discover_image_container {
+      width: 100%;
+      height: fit-content;
+      background-image: url("https://media.istockphoto.com/vectors/thumbnail-image-vector-graphic-vector-id1147544807?k=20&m=1147544807&s=612x612&w=0&h=pBhz1dkwsCMq37Udtp9sfxbjaMl27JUapoyYpQm0anc=");
+      border-radius: 10px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #cfcfcf;
+  }
+  
+  .loader {
+      width: 100%;
+      height: fit-content;
+  
+      display: block;
+      border-radius: 10px;
+      background: linear-gradient(        
+        to right,
+        rgba(255, 255, 255, 0),
+        rgba(232, 231, 247, 0.5) 50%,
+        rgba(255, 0, 0, 0) 80%
+      );
+      background-repeat: repeat-y;        
+      background-size: 50px 200px;        
+      background-position: 0 0;
+      animation: shine 1.5s infinite;
+  }
+  .main_discover {
+      max-width: 1600px;
+      margin: auto;
+  }
+  .column {
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+  }
+  .galery_container {
+      margin-top: 30px;
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+  
+  .discover_image_description {
+      position: relative;
+      bottom: 0px;
+      background-color: rgb(0, 12, 185);
+      opacity: 1;
+      width: 100%;
+      border-radius: 0px 0px 10px 10px; 
+  }
+  .discover_image_description p {
+      color: white;
+      padding: 20px;
+  }
+  @keyframes shine {
+      from {
+          background-position: -10%;
+      }
+      to {
+          background-position: 120% 0%, 50% 0%;
+      }
+      
+  }
+  @media screen and (min-width:900px) {
+   
+      main {
+          grid-template-columns: 60% 1fr;
+          gap: 15px;
+        
+      }
+      
+      .discover_image_container:hover {
+          transform: scale(1.1);
+          transition: transform 330ms ease-in-out;
+          z-index: 1;
+      }
+      .discover_image_container:not(hover) {
+          transform: scale(1);
+          transition: transform 330ms ease-in-out;
+          
+      }
+    
+      
+  }
+  @media  screen and (min-width:1100px) {
+      main {
+          grid-template-columns: 20% 1fr 20%;
+      }
+      
+      .discover_image_container:hover {
+          transform: scale(1.1);
+          transition: transform 330ms ease-in-out;
+          z-index: 1;
+      }
+      .discover_image_container:not(hover) {
+          transform: scale(1);
+          transition: transform 330ms ease-in-out;
+          
+      }
+      .galery_container {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+      }
+      .column {
+          width: 32.3%;
+        
+      }
+      .discover_image_description {
+          display: none;
+      }
+      .discover_image_container:hover .discover_image_description {
+          display: block;
+          position: absolute;
+          bottom: 0px;
+          background-color: black;
+          opacity: 1;
+          width: 100%;
+          border-radius: 0px 0px 10px 10px;
+      }
+
+    
+  }
